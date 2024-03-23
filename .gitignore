@@ -1,6 +1,5 @@
 # Dependency directories
 node_modules
-
 dist/
 
 # Files that might appear in the root of a volume
@@ -52,4 +51,3 @@ Thumbs.db
 
 # Jetbrains
 .idea/
-
