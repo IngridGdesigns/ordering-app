@@ -192,7 +192,11 @@ function fetchData() {
 }
 
 function render() {
-  document.getElementById('content').innerHTML = fetchData();
+  document.addEventListener('DOMContentLoaded', (e) => {
+    e.preventDefault();
+    // DOM is loaded
+    document.getElementById('content').innerHTML = fetchData();
+  });
 }
 
 render();
