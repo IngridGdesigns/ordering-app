@@ -17,6 +17,6 @@
         "single"
     ],
     "no-use-before-define": ["error", {"functions": false, "classes": false }],
-    "import/order": "off"
+    "import/prefer-default-export": "off"
     }
 }
