@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container header">
+                <h1>Jimmy’s Diner</h1>
+                <p>The best pizza and burgers in town.</p>
+            </div>
+        </header>
+        <main>
+            <section class="container menu-flex" id="content">
+                <!-- menu items -->
+            </section>
+            
+            <section id="precheckout" class="container hidden">
+                    <!-- order precheckout -->
+            </section>
+            <!-- modal form -->
+            <div id="pop-up" class="pop-up">
+                <form id="card" name="card" method="post" class="form-card">
+                    <span id="close" class="close" data="close">&times;</span>
+                    <h1>Enter card details</h1>
+                    
+                    <label for="name"></label>
+                    <input id="name" type="name" name="name" placeholder="Enter name" required/>
+                    
+                    <label for="cardNumber"></label>
+                    <input id="cardNumber" name="cardNumber" type="tel" inputmode="numeric" placeholder="Enter card number" required/>
+                    
+                    <label for="cardCvv"></label>
+                    <input id="cardCvv" name="cardCvv" type="tel" placeholder="Enter 3-4 digit CVV" minlength="3" required/>                        
+                    
+                    <button id="payBtn" aria-disabled="true" aria-describedby="disabled until form filled out" type="submit">Pay</button>
+                </form>
+            </div>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
