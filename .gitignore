@@ -1,5 +1,6 @@
 # Dependency directories
-node_modules/
+node_modules
+
 dist/
 
 # Files that might appear in the root of a volume
