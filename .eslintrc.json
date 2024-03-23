@@ -19,6 +19,7 @@
     "no-use-before-define": ["error", {"functions": false, "classes": false }],
     "import/prefer-default-export": "off",
     "no-alert": "off",
-    "allowSingleLineBlocks": false
+    "allowSingleLineBlocks": false,
+    "no-param-reassign": 0
     }
 }

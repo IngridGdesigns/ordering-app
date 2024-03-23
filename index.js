@@ -45,12 +45,10 @@ function handleAddFoodItem(foodId) { // index
 function handleCompleteOrderBtn(e, modal) {
   e.preventDefault();
 
-  // eslint-disable-next-line no-param-reassign
   modal.style.display = 'flex';
 }
 
 function handleCloseBox(box) {
-  // eslint-disable-next-line no-param-reassign
   box.style.display = 'none';
 }
 
@@ -72,7 +70,6 @@ function handlePayment(e, modal) {
   }
 
   if (isValid) {
-    // eslint-disable-next-line no-param-reassign
     modal.style.display = 'none';
     isDisabled = 'false';
 
@@ -141,13 +138,6 @@ function handlePreCheckout(addedItems) {
 
     addFood = '<h1 class="preCheckoutOrder">Your Order</h1>';
 
-    // for (const [index, item] of addedItems.entries()) {
-    //   addFood += `<div class="preCheckout">
-    // eslint-disable-next-line max-len
-    //                             <p>${item.name}<span id="remove" class="preCheckout-remove" data-remove=${index}>remove</span></p>
-    //                             <p>$${item.price}</p>
-    //                         </div>`;
-    // }
     addedItems.forEach((item, index) => {
       addFood += `<div class="preCheckout">
                     <p>${item.name}<span id="remove" class="preCheckout-remove" data-remove=${index}>remove</span></p>
@@ -171,7 +161,7 @@ function handlePreCheckout(addedItems) {
 
 function fetchData() {
   let products = '';
-  console.log('fetching data')
+  
   menuArray.forEach((item) => {
     const {
       name, ingredients, id, price, emoji,
@@ -195,13 +185,12 @@ function fetchData() {
     
     return products
   });
- console.log('fetched data')
+
   return products;
 }
 
 function render() {
   document.getElementById('content').innerHTML = fetchData();
 }
-
 
 render();
