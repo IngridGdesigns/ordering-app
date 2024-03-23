@@ -49,15 +49,6 @@ export function totalItemPrice(ocurrences, addedItem) {
         allItems.push(price);
       }
     });
-    // for (const [key, value] of Object.entries(ocurrences)) {
-    //   if (key === item.name) {
-    //     const totalPrice = value > 0 ? item.price * value : item.price;
-    //     price = {};
-    //     price[`"${item.name}": "${price}"`];
-
-    //     allItems.push(price);
-    //   }
-    // }
   });
 
   return allItems;
