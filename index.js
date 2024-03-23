@@ -1,5 +1,5 @@
-import { menuArray } from './data';
-import { validateForm, calculateTotalCost } from './helperFunctions';
+import { menuArray } from './data.js';
+import { validateForm, calculateTotalCost } from './helperFunctions.js';
 
 let menuItems = [];
 let total;
@@ -16,15 +16,21 @@ document.addEventListener('click', (e) => {
     menuItems.push(targetItem); // push to
 
     handlePreCheckout(menuItems);
+
   } else if (e.target.id === 'checkout-btn') {
     handleCompleteOrderBtn(e, modal);
+
   } else if (e.target.dataset.remove) {
     handleRemoveItem(e.target.dataset.remove);
+
   } else if (e.target.id === 'close') {
     handleCloseBox(modal);
+
   } else if (e.target.id === 'payBtn') {
     handlePayment(e, modal);
+
   } else if (e.target.id === 'close-box') {
+
     const thankYouModal = document.querySelector('.orderCompleteMsg');
     handleCloseBox(thankYouModal);
   }
@@ -165,7 +171,7 @@ function handlePreCheckout(addedItems) {
 
 function fetchData() {
   let products = '';
-
+  console.log('fetching data')
   menuArray.forEach((item) => {
     const {
       name, ingredients, id, price, emoji,
@@ -181,22 +187,21 @@ function fetchData() {
                         <p>${list}</p>
                         <h5>${fullPrice}</h5>
                     </div>
-                    <button id="add-btn" class="add-btn" data-food=${id}> 
-                        +
-                    </button>
+                  <button id="add-btn" class="add-btn" data-food=${id}> 
+                   +
+                  </button>
                 </div>
                 <div class="hr-space"><hr /></div>`;
+    
+    return products
   });
-
+ console.log('fetched data')
   return products;
 }
 
 function render() {
-  document.addEventListener('DOMContentLoaded', (e) => {
-    e.preventDefault();
-    // DOM is loaded
-    document.getElementById('content').innerHTML = fetchData();
-  });
+  document.getElementById('content').innerHTML = fetchData();
 }
+
 
 render();
