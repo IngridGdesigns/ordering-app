@@ -13,11 +13,12 @@ Live site: https://ninas-diner-orderingapp.netlify.app/
 
 <img src="https://github.com/IngridGdesigns/ordering-app/blob/main/screenshots/orderApp.png" width="50%" height="50%">
 
-<img src="https://github.com/IngridGdesigns/ordering-app/blob/main/screenshots/orderAppCheckout.png" width="50%" height="50%">
-
 <img src="https://github.com/IngridGdesigns/ordering-app/blob/main/screenshots/orderAppPreorder.png" width="50%" height="50%">
 
-<img src="https://github.com/IngridGdesigns/ordering-app/blob/main/screenshots/endOfPurchaseMsg.png" width="50%" height="50%">
+<img src="https://github.com/IngridGdesigns/ordering-app/blob/main/screenshots/orderAppCheckout.png" width="50%" height="50%">
+
+
+
 
 Quick start:
 
