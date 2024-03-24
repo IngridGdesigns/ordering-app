@@ -9,6 +9,10 @@ Solo project to practice JavaScript concepts, DOM, and practice CSS styling
 - Input Validation with error message
 - WIP - count of items on one line
 
+Live site: https://ninas-diner-orderingapp.netlify.app/
+
+<img src="https://github.com/IngridGdesigns/ordering-app/blob/main/screenshots/orderApp.png" width="50%" height="50%">
+
 Quick start:
 
 ```
