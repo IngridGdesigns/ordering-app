@@ -1,6 +1,6 @@
 # ordering-app
 
-Solo project to practice JavaScript concepts, DOM, and practice CSS styling
+Solo project "Nina's diner", to practice JavaScript concepts, modals, DOM, and practice CSS styling
 
 ***Added features***
 
