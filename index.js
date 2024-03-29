@@ -159,6 +159,15 @@ function handlePreCheckout(addedItems) {
   return addFood;
 }
 
+
+// function countItems(item) {
+//   menuItems.forEach(food => {
+//     if (food.id === item.id) {
+      
+//     }
+//   })
+// }
+
 function fetchData() {
   let products = '';
   
